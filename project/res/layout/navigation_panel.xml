@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true" >
+
+    <ImageButton
+        android:id="@+id/rotate_left_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:src="@drawable/rotate_left" />
+
+    <ImageButton
+        android:id="@+id/move_left_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/rotate_left_button"
+        android:background="@drawable/button"
+        android:src="@drawable/move_left" />
+
+    <ImageButton
+        android:id="@+id/forward_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/rotate_left_button"
+        android:background="@drawable/button"
+        android:src="@drawable/move_forward" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/forward_button"
+        android:layout_toRightOf="@id/rotate_left_button"
+        android:background="@drawable/button"
+        android:src="@drawable/move_back" />
+
+    <ImageButton
+        android:id="@+id/rotate_right_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/forward_button"
+        android:background="@drawable/button"
+        android:src="@drawable/rotate_right" />
+
+    <ImageButton
+        android:id="@+id/move_right_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/rotate_right_button"
+        android:layout_toRightOf="@id/forward_button"
+        android:background="@drawable/button"
+        android:src="@drawable/move_right" />
+
+</RelativeLayout>
